@@ -218,3 +218,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- call_mvp (kursinio 2 dalis) ---
+# Duomenys, garsas ir pridėta kurso medžiaga į Git nekeliami.
+bendra_medziaga/
+# Spark vietiniai failai
+spark-warehouse/
+metastore_db/
+derby.log

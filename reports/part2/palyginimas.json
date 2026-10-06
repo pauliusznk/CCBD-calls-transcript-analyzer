@@ -1,0 +1,53 @@
+{
+  "created_at_utc": "2026-10-06T21:09:10+00:00",
+  "timings": [
+    {
+      "method": "python",
+      "calls": 34,
+      "audio_min": 354.99,
+      "workers": 1,
+      "spark_start_s": null,
+      "total_s": 445.31,
+      "total_min": 7.42,
+      "asr_sum_s": 194.16,
+      "llm_sum_s": 251.11,
+      "speedup_vs_python": null,
+      "errors": 0
+    },
+    {
+      "method": "spark_local_4",
+      "calls": 34,
+      "audio_min": 354.99,
+      "workers": 4,
+      "spark_start_s": 3.91,
+      "total_s": 161.5,
+      "total_min": 2.69,
+      "asr_sum_s": 282.71,
+      "llm_sum_s": 266.54,
+      "speedup_vs_python": 2.76,
+      "errors": 0
+    }
+  ],
+  "agreement": {
+    "calls": 34,
+    "asr_text_same": 34,
+    "asr_text_similarity_pct": 100.0,
+    "topic_same": 34,
+    "resolution_same": 34,
+    "dissatisfied_same": 33
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.14.8",
+    "cpu_cores": 8,
+    "api_base_url": "https://api-lb.i4tech.lt/v1",
+    "asr_model": "parakeet (API, 300 s WAV dalys)",
+    "llm_model": "gpt-6.1-sol",
+    "packages": {
+      "pyspark": "4.2.0",
+      "openai": "3.25.0",
+      "openai-agents": "0.23.1"
+    },
+    "spark_master": "local[4]"
+  }
+}

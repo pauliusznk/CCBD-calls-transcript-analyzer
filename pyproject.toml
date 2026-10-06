@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "call-mvp"
+version = "0.3.0"
+description = "Kursinio MVP: skambučių ASR ir OpenAI analizė paprastai ir su Spark (2 dalis)"
+readme = "README.md"
+requires-python = ">=3.10"
+# Dalių priklausomybės laikomos atskiruose requirements-part*.txt failuose,
+# kad trečios dalies programai nereikėtų PySpark ir Java.
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

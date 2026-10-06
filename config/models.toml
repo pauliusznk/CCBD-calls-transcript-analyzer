@@ -1,0 +1,12 @@
+# Modeliai, kuriuos naudoja programa. API adresas ir raktas laikomi .env faile.
+
+[asr]  # garsas -> tekstas
+# Tavo API turi parakeet ir whisper-1 (2026-10-06 whisper-1 grąžino 502 klaidą).
+model = "parakeet"
+# Ilgas įrašas siunčiamas tokio ilgio dalimis (sekundėmis); ~16 min įrašą serveris atmetė.
+chunk_seconds = 300
+
+[llm]  # tekstas -> analizė
+model = "gpt-6.1-sol"
+# 0 = kuo pastovesni atsakymai. Jei modelis šio parametro nepriima, ištrink eilutę.
+temperature = 0
